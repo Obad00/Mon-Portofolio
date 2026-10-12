@@ -1,0 +1,26 @@
+/* Closed, the sheet stays mounted for its exit transition: `visibility` keeps it
+   out of the tab order and of the accessibility tree. */
+.modal{position:fixed;inset:0;z-index:60;display:grid;place-items:end center;pointer-events:none;visibility:hidden;transition:visibility 0s linear .7s}
+.modal .scrim{position:absolute;inset:0;background:rgba(4,5,8,.7);backdrop-filter:blur(6px);opacity:0;transition:opacity .5s var(--ease)}
+.modal .sheet{position:relative;width:min(1100px,100%);max-height:92svh;overflow:auto;background:var(--ink-2);border:1px solid var(--line);border-bottom:0;border-radius:22px 22px 0 0;transform:translateY(100%);transition:transform .7s var(--ease);padding-bottom:env(safe-area-inset-bottom,0px)}
+.modal.open{pointer-events:auto;visibility:visible;transition-delay:0s}
+.modal.open .scrim{opacity:1}
+.modal.open .sheet{transform:translateY(0)}
+.sheet .hero-cv{height:clamp(220px,38vw,420px)}
+.sheet .body{padding:clamp(22px,4vw,48px);display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:40px}
+.sheet h3{margin:0 0 14px;font-size:clamp(40px,6vw,80px);font-weight:800;letter-spacing:-.05em;line-height:.9}
+.sheet p{margin:0;font-size:18px;line-height:1.6;color:var(--soft);max-width:60ch}
+.sheet dl{margin:0;display:grid;gap:16px;align-content:start}
+.sheet dt{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.sheet dd{margin:4px 0 0;font-size:16px}
+.sheet .ent{margin-top:8px}
+.sheet .ent strong{display:block;font-weight:600}
+.sheet .ent span{color:var(--muted);font-size:14px}
+.visit{display:inline-flex;align-items:center;gap:10px;margin-top:22px;padding:14px 22px;border-radius:999px;background:var(--ivory);color:var(--ink);font-weight:600;font-size:15px}
+.visit.off{background:transparent;color:var(--muted);border:1px dashed var(--line)}
+.close{position:absolute;top:16px;right:16px;width:46px;height:46px;border-radius:50%;background:rgba(8,9,12,.6);backdrop-filter:blur(8px);border:1px solid var(--line);display:grid;place-items:center;font-size:20px;z-index:2;transition:transform .4s var(--ease)}
+.close:hover{transform:rotate(90deg)}
+
+@media (max-width:900px){
+  .sheet .body{grid-template-columns:minmax(0,1fr)}
+}

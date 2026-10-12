@@ -1,0 +1,18 @@
+/* Order matters: tokens, base, one file per section, then motion (reveals and
+   reduced motion must come last to win over the section rules). */
+@import './tokens.css';
+@import './base.css';
+@import './loader.css';
+@import './nav.css';
+@import './hero.css';
+@import './marquee.css';
+@import './projects.css';
+@import './modal.css';
+@import './domains.css';
+@import './experience.css';
+@import './education.css';
+@import './stack.css';
+@import './about.css';
+@import './contact.css';
+@import './cursor.css';
+@import './motion.css';

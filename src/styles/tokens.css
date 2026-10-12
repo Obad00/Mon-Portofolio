@@ -1,0 +1,15 @@
+/* Palette, polices et easing : la seule source de vérité du design. */
+:root{
+  --ink:#08090C; --ink-2:#101219; --ink-3:#171A23; --line:#252A36;
+  --ivory:#EEEAE2; --soft:#C9C6C0; --muted:#8E93A1;
+  --cobalt:#6A7BFF; --cobalt-2:#3C4FE0; --amber:#F2B544; --green:#3DDC84;
+
+  --display:"Bricolage Grotesque Variable", "Bricolage Grotesque", "Arial Narrow", system-ui, sans-serif;
+  --serif:"Instrument Serif", Georgia, serif;
+  --mono:"JetBrains Mono", ui-monospace, Menlo, monospace;
+
+  --ease:cubic-bezier(.2,.7,.1,1);
+  --gutter:clamp(16px,4vw,56px);
+
+  color-scheme:dark;
+}

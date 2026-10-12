@@ -1,0 +1,4 @@
+/* Position set by useFollowPointer through --x / --y. */
+.cursor{position:fixed;left:0;top:0;width:12px;height:12px;border-radius:50%;background:var(--ivory);pointer-events:none;z-index:90;mix-blend-mode:difference;transform:translate(var(--x,0px),var(--y,0px)) translate(-50%,-50%);transition:width .4s var(--ease),height .4s var(--ease),background .3s;display:grid;place-items:center;font-family:var(--mono);font-size:0;color:var(--ink)}
+.cursor.big{width:86px;height:86px;font-size:11px;letter-spacing:.08em;mix-blend-mode:normal;background:var(--ivory)}
+@media (hover:none),(pointer:coarse){.cursor{display:none}}

@@ -1,0 +1,12 @@
+.nav{position:fixed;left:0;right:0;top:0;z-index:40;padding:calc(env(safe-area-inset-top,0px) + 18px) var(--gutter) 18px;display:flex;justify-content:space-between;align-items:center;mix-blend-mode:difference}
+.nav .logo{font-weight:800;letter-spacing:-.02em;font-size:18px}
+.nav .logo span{color:var(--cobalt)}
+.nav ul{display:flex;gap:28px;list-style:none;margin:0;padding:0;font-size:14px}
+.nav a{position:relative}
+.nav a::after{content:"";position:absolute;left:0;right:0;bottom:-3px;height:1px;background:currentColor;transform:scaleX(0);transform-origin:right;transition:transform .5s var(--ease)}
+.nav a:hover::after{transform:scaleX(1);transform-origin:left}
+.nav .status{color:var(--ivory)}
+
+@media (max-width:900px){
+  .nav ul{display:none}
+}

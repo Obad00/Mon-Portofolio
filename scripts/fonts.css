@@ -1,0 +1,7 @@
+/* Same self-hosted fonts as the site, for the generated images. */
+@font-face{font-family:"Bricolage Grotesque Variable";font-weight:200 800;font-display:block;src:url("/node_modules/@fontsource-variable/bricolage-grotesque/files/bricolage-grotesque-latin-opsz-normal.woff2") format("woff2-variations")}
+@font-face{font-family:"Instrument Serif";font-style:italic;font-weight:400;font-display:block;src:url("/node_modules/@fontsource/instrument-serif/files/instrument-serif-latin-400-italic.woff2") format("woff2")}
+@font-face{font-family:"JetBrains Mono";font-weight:400;font-display:block;src:url("/node_modules/@fontsource/jetbrains-mono/files/jetbrains-mono-latin-400-normal.woff2") format("woff2")}
+:root{--ink:#08090C;--line:#252A36;--ivory:#EEEAE2;--muted:#8E93A1;--cobalt:#6A7BFF;--cobalt-2:#3C4FE0}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;background:var(--ink);color:var(--ivory);font-family:"Bricolage Grotesque Variable",sans-serif;-webkit-font-smoothing:antialiased;overflow:hidden}

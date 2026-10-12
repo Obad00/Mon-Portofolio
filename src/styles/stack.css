@@ -1,0 +1,11 @@
+.stack{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:18px;overflow:hidden}
+.grp{background:var(--ink);padding:28px 26px;display:grid;gap:18px;align-content:start;position:relative}
+.grp h3{margin:0;display:flex;justify-content:space-between;align-items:baseline;gap:12px;font-size:21px;font-weight:600;letter-spacing:-.02em}
+.grp h3 sup{font-family:var(--mono);font-size:12px;color:var(--muted);font-weight:400}
+.grp .tags span{transition:background .3s,color .3s,border-color .3s,transform .4s var(--ease)}
+.grp .tags span:hover{background:var(--ivory);color:var(--ink);border-color:var(--ivory);transform:translateY(-2px)}
+.stack-total{font-family:var(--mono);font-size:13px;color:var(--muted)}
+
+@media (max-width:900px){
+  .stack{grid-template-columns:minmax(0,1fr)}
+}

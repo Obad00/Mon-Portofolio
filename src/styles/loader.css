@@ -1,0 +1,5 @@
+.loader{position:fixed;inset:0;z-index:100;background:var(--ink);display:grid;place-items:center;transition:transform 1s var(--ease) .1s}
+.loader.done{transform:translateY(-100%)}
+.loader .n{font-family:var(--mono);font-size:13px;color:var(--muted);position:absolute;bottom:32px;right:var(--gutter)}
+.loader .w{font-size:clamp(40px,8vw,96px);font-weight:800;letter-spacing:-.04em;overflow:hidden;display:flex}
+.loader .w span{display:inline-block;--from:110%;animation:up .8s var(--ease) both}

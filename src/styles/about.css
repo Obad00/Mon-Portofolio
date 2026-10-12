@@ -1,0 +1,9 @@
+.about{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr);gap:56px;align-items:start}
+.about .quote{font-size:clamp(30px,4.2vw,58px);line-height:1.04;letter-spacing:-.035em;font-weight:400;margin:0}
+.about .quote em{color:var(--amber)}
+.about .txt{display:grid;gap:18px;font-size:18px;line-height:1.6;color:var(--soft)}
+.about .txt p{margin:0;max-width:58ch}
+
+@media (max-width:900px){
+  .about{grid-template-columns:minmax(0,1fr)}
+}
