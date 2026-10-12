@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react'
 import { useMagnetic } from '../hooks/useMagnetic.js'
+import { ARROW_OUT } from '../utils/format.js'
 import Cover from './Cover.jsx'
 
 const FOCUSABLE = 'a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])'
@@ -69,7 +70,7 @@ export default function ProjectModal({ project, open, onClose }) {
                 <p>{project.desc}</p>
                 {project.url ? (
                   <a className="visit" href={project.url} target="_blank" rel="noopener" {...magnetic}>
-                    Voir le site ↗
+                    Voir le site {ARROW_OUT}
                   </a>
                 ) : (
                   <span className="visit off" aria-disabled="true">

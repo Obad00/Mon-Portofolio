@@ -1,28 +1,40 @@
 import { useMagnetic } from '../hooks/useMagnetic.js'
+import { useRotator } from '../hooks/useRotator.js'
 
-const ROLES = ['Développeur web & mobile', "Cofondateur d'ORYZA", 'Fondateur de SANKORA HAUSS']
+const ROLES = [
+  'Entrepreneur',
+  'Développeur web & mobile',
+  "Cofondateur d'ORYZA",
+  'Fondateur de SANKORA HAUSS',
+  'Concepteur de produits',
+]
 
 export default function Hero() {
   const magnetic = useMagnetic()
+  const { current, leaving } = useRotator(ROLES.length)
 
   return (
     <header className="hero">
-      <span className="mono kicker">Développeur full-stack · Dakar, Sénégal</span>
+      <span className="mono kicker">Entrepreneur &amp; développeur · Dakar, Sénégal</span>
       <h1>
         <span className="line"><span>Adama</span></span>
         <span className="line"><span>Dabo<em className="s">.</em></span></span>
       </h1>
       <div className="hero-row">
-        <p>Je conçois et je code des produits numériques utiles, du premier écran jusqu'à la mise en production.</p>
+        <p>Je construis des entreprises et les produits numériques qui les font vivre, de l'idée jusqu'à la mise en production.</p>
         <div>
           <span className="mono">Aujourd'hui</span>
           <div className="roles" aria-live="off">
             <ul>
-              {ROLES.map((role) => (
-                <li key={role}>{role}</li>
+              {ROLES.map((role, i) => (
+                <li
+                  key={role}
+                  className={i === current ? 'on' : i === leaving ? 'out' : undefined}
+                  aria-hidden={i !== current}
+                >
+                  {role}
+                </li>
               ))}
-              {/* The first role again, so the loop restarts without a jump. */}
-              <li aria-hidden="true">{ROLES[0]}</li>
             </ul>
           </div>
         </div>

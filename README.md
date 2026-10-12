@@ -1,6 +1,6 @@
 # Portfolio — Adama Dabo
 
-Portfolio personnel d'Adama Dabo, développeur full-stack à Dakar : projets, expérience, parcours, stack et contact sur une seule page. Site statique en React + Vite.
+Portfolio personnel d'Adama Dabo, entrepreneur et développeur à Dakar : projets, expérience, parcours, stack et contact sur une seule page. Site statique en React + Vite.
 
 ## Démarrer
 

@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { useMagnetic } from '../hooks/useMagnetic.js'
+import { ARROW_OUT } from '../utils/format.js'
 
 const EMAIL = 'adamafalloudabo@gmail.com'
 const PHONES = ['+221 77 142 52 49', '+221 78 794 44 90']
@@ -50,7 +51,7 @@ export default function Contact() {
         </div>
         <div>
           <span className="mono">GitHub</span>
-          <a href="https://github.com/Obad00" target="_blank" rel="noopener">github.com/Obad00 ↗</a>
+          <a href="https://github.com/Obad00" target="_blank" rel="noopener">github.com/Obad00 {ARROW_OUT}</a>
         </div>
         <div>
           <span className="mono">Basé à</span>
