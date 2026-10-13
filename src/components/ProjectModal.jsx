@@ -69,7 +69,7 @@ export default function ProjectModal({ project, open, onClose }) {
                 <h3 id="m-title">{project.t}</h3>
                 <p>{project.desc}</p>
                 {project.url ? (
-                  <a className="visit" href={project.url} target="_blank" rel="noopener" {...magnetic}>
+                  <a className="visit" href={project.url} target="_blank" rel="noopener noreferrer" {...magnetic}>
                     Voir le site {ARROW_OUT}
                   </a>
                 ) : (

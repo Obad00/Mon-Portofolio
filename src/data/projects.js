@@ -35,7 +35,7 @@ export const projects = [
   role:'Développeur mobile',for:'Partenariat',year:'2026 · en cours',stack:['Flutter'],url:'',soon:'Application mobile · site vitrine à venir'},
  {id:'pmd',t:'PMD',cat:'site',k:'Site client',d:'Site de la certification de conducteurs professionnels.',c:'#E5484D',bg:'#1E0709',
   desc:"Site de la certification Professional Mobility Driver, programme porté par Yello UPSKILL : neuf pages fidèles à la maquette validée, formulaires de candidature et de contact, paramètres de session centralisés.",
-  role:'Intégration et développement',for:'PMD · Yello UPSKILL',year:'2026 · préproduction',stack:['React','Vite','React Router'],url:'https://pmd-site-mu.vercel.app'},
+  role:'Intégration et développement',for:'PMD · Yello UPSKILL',year:'2026 · en ligne',stack:['React','Vite','React Router'],url:'https://certificationpmd.com'},
  {id:'cxbd',t:'CXBD',cat:'site',k:'Projet ORYZA',d:'Centre Expérimental en Business Design, incubateur.',c:'#22C7A9',bg:'#03171A',
   desc:"Site du CXBD, Centre Expérimental en Business Design : un incubateur stratégique qui accompagne les entrepreneurs sénégalais dont les projets s'alignent sur les priorités nationales.",
   role:'Développement, au sein du studio',for:'ORYZA · pour le CXBD',year:'En ligne',stack:['React'],url:'https://cxbd-app-gkk4.vercel.app'},
